@@ -11,7 +11,7 @@ echo "  Resource Group: $RESOURCE_GROUP"
 echo "  Registry: $CONTAINER_REGISTRY"
 echo ""
 
-echo "🏗️  Creating Azure Container Registry..."
+echo " Creating Azure Container Registry..."
 echo "This takes 2-3 minutes..."
 az acr create \
     --resource-group $RESOURCE_GROUP \
@@ -30,7 +30,7 @@ fi
 echo "✓ Container registry created"
 
 echo ""
-echo "🔑 Getting registry credentials..."
+echo " Getting registry credentials..."
 ACR_USERNAME=$(az acr credential show --name $CONTAINER_REGISTRY --query username -o tsv)
 ACR_PASSWORD=$(az acr credential show --name $CONTAINER_REGISTRY --query passwords[0].value -o tsv)
 ACR_LOGIN_SERVER=$(az acr show --name $CONTAINER_REGISTRY --query loginServer -o tsv)
@@ -86,7 +86,7 @@ az containerapp create \
     --output table
 
 echo ""
-echo "🌐 Getting API URL..."
+echo " Getting API URL..."
 APP_URL=$(az containerapp show \
     --name $CONTAINER_APP \
     --resource-group $RESOURCE_GROUP \
@@ -99,7 +99,7 @@ echo "=================================================="
 echo " Step 3 Complete!"
 echo "=================================================="
 echo ""
-echo "🎉 Your API is live!"
+echo " Your API is live!"
 echo ""
 echo "API URL: https://$APP_URL"
 echo ""

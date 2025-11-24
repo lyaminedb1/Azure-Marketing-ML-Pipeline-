@@ -6,7 +6,7 @@ echo "=================================================="
 echo ""
 
 # Configuration
-echo "📋 Configuration Variables:"
+echo " Configuration Variables:"
 echo ""
 echo "Please choose UNIQUE names (globally unique across Azure):"
 echo ""
@@ -56,7 +56,7 @@ az group create \
 
 echo ""
 echo "=================================================="
-echo "✅ Step 1 Complete!"
+echo " Step 1 Complete!"
 echo "=================================================="
 echo ""
 echo "Configuration saved. Ready for next step!"

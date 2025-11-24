@@ -7,7 +7,7 @@ echo ""
 
 # Load configuration
 if [ ! -f "./azure-config.env" ]; then
-    echo "❌ Configuration file not found!"
+    echo " Configuration file not found!"
     exit 1
 fi
 
@@ -16,12 +16,12 @@ echo "✓ Configuration loaded"
 echo ""
 
 # Create project structure
-echo "📁 Creating project structure..."
+echo " Creating project structure..."
 mkdir -p azure-svm-api/{models,src}
 
 # Copy model files
 echo ""
-echo "📦 Copying your SVM model files..."
+echo " Copying your SVM model files..."
 cp ./models/svm_conversion_model.pkl azure-svm-api/models/
 cp ./models/scaler.pkl azure-svm-api/models/
 cp ./models/label_encoders.pkl azure-svm-api/models/
@@ -155,7 +155,7 @@ echo "  ✓ Dockerfile created"
 
 echo ""
 echo "=================================================="
-echo "✅ Step 2 Complete!"
+echo " Step 2 Complete!"
 echo "=================================================="
 echo ""
 echo "API prepared in: azure-svm-api/"

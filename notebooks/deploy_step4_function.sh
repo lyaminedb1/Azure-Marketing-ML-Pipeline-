@@ -11,7 +11,7 @@ echo "✓ Configuration loaded"
 echo "  API Endpoint: $API_ENDPOINT"
 echo ""
 
-echo "💾 Creating storage account..."
+echo " Creating storage account..."
 az storage account create \
     --name $STORAGE_ACCOUNT \
     --resource-group $RESOURCE_GROUP \
@@ -22,7 +22,7 @@ az storage account create \
 echo "✓ Storage account created"
 
 echo ""
-echo "🔑 Getting storage credentials..."
+echo " Getting storage credentials..."
 STORAGE_CONNECTION=$(az storage account show-connection-string \
     --name $STORAGE_ACCOUNT \
     --resource-group $RESOURCE_GROUP \
@@ -36,7 +36,7 @@ STORAGE_KEY=$(az storage account keys list \
 echo "✓ Credentials retrieved"
 
 echo ""
-echo "📂 Creating blob containers..."
+echo " Creating blob containers..."
 az storage container create \
     --name input-data \
     --account-name $STORAGE_ACCOUNT \
@@ -52,7 +52,7 @@ az storage container create \
 echo "✓ Containers created"
 
 echo ""
-echo "📁 Creating Function App files..."
+echo " Creating Function App files..."
 mkdir -p azure-function
 cd azure-function
 
@@ -178,7 +178,7 @@ func azure functionapp publish $FUNCTION_APP --python
 
 echo ""
 echo "=================================================="
-echo "✅ Step 4 Complete!"
+echo " Step 4 Complete!"
 echo "=================================================="
 echo ""
 echo "Function App: $FUNCTION_APP"
