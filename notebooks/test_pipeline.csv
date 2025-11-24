@@ -1,0 +1,4 @@
+Age,Gender,Income,CampaignChannel,CampaignType,AdSpend,ClickThroughRate,ConversionRate,WebsiteVisits,PagesPerVisit,TimeOnSite,SocialShares,EmailOpens,EmailClicks,PreviousPurchases,LoyaltyPoints
+35,Male,75000,Email,Conversion,5000,0.15,0.12,25,5.5,8.2,40,10,5,3,2000
+28,Female,55000,Social Media,Awareness,3000,0.08,0.05,10,3.2,4.5,20,5,2,1,500
+42,Male,95000,PPC,Conversion,8000,0.25,0.18,45,8.5,12.5,75,15,8,7,4500

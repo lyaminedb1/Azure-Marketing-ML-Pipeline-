@@ -1,0 +1,43 @@
+{
+  "feature_columns": [
+    "Age",
+    "Gender",
+    "Income",
+    "CampaignChannel",
+    "CampaignType",
+    "AdSpend",
+    "ClickThroughRate",
+    "ConversionRate",
+    "WebsiteVisits",
+    "PagesPerVisit",
+    "TimeOnSite",
+    "SocialShares",
+    "EmailOpens",
+    "EmailClicks",
+    "PreviousPurchases",
+    "LoyaltyPoints"
+  ],
+  "categorical_columns": [
+    "Gender",
+    "CampaignChannel",
+    "CampaignType"
+  ],
+  "model_type": "SVM (Support Vector Machine)",
+  "model_params": {
+    "C": 10,
+    "break_ties": false,
+    "cache_size": 200,
+    "class_weight": null,
+    "coef0": 0.0,
+    "decision_function_shape": "ovr",
+    "degree": 3,
+    "gamma": 0.01,
+    "kernel": "rbf",
+    "max_iter": -1,
+    "probability": true,
+    "random_state": 42,
+    "shrinking": true,
+    "tol": 0.001,
+    "verbose": false
+  }
+}

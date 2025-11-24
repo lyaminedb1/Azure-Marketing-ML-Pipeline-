@@ -1,0 +1,35 @@
+{
+  "blob_name": "input-data/test_restart.csv",
+  "processing_status": "success",
+  "predictions": {
+    "predictions": [
+      {
+        "confidence": 0.9929362252563749,
+        "prediction": 1,
+        "prediction_label": "Will Convert",
+        "probability_conversion": 0.9929362252563749,
+        "record_id": 0
+      },
+      {
+        "confidence": 0.9806752921485905,
+        "prediction": 0,
+        "prediction_label": "Will Not Convert",
+        "probability_conversion": 0.019324707851409585,
+        "record_id": 1
+      },
+      {
+        "confidence": 0.7339597450239395,
+        "prediction": 1,
+        "prediction_label": "Will Convert",
+        "probability_conversion": 0.7339597450239395,
+        "record_id": 2
+      }
+    ],
+    "success": true,
+    "summary": {
+      "conversion_rate": 0.6666666666666666,
+      "predicted_conversions": 2,
+      "total_records": 3
+    }
+  }
+}
