@@ -31,7 +31,7 @@ fi
 
 # Save configuration
 echo ""
-echo "💾 Saving configuration..."
+echo " Saving configuration..."
 cat > ./azure-config.env << EOFCONFIG
 RESOURCE_GROUP=$RESOURCE_GROUP
 LOCATION=$LOCATION
@@ -48,7 +48,7 @@ echo "✓ Configuration saved to azure-config.env"
 
 # Create resource group
 echo ""
-echo "📦 Creating resource group..."
+echo " Creating resource group..."
 az group create \
     --name $RESOURCE_GROUP \
     --location $LOCATION \

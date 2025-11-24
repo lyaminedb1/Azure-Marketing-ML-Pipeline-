@@ -172,7 +172,7 @@ az functionapp config appsettings set \
 echo "✓ Settings configured"
 
 echo ""
-echo "📦 Deploying function code..."
+echo " Deploying function code..."
 cd azure-function
 func azure functionapp publish $FUNCTION_APP --python
 

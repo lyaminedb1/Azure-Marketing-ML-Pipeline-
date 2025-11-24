@@ -68,7 +68,7 @@ az containerapp env create \
     --output table
 
 echo ""
-echo "🚢 Deploying Container App..."
+echo " Deploying Container App..."
 az containerapp create \
     --name $CONTAINER_APP \
     --resource-group $RESOURCE_GROUP \
